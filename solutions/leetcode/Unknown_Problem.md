@@ -4,12 +4,12 @@
 - **Platform**: leetcode
 - **Language**: Unknown
 - **Date**: 2026-02-24
-- **Problem Link**: [https://leetcode.com/problems/combination-sum-iii/submissions/1929954746/](https://leetcode.com/problems/combination-sum-iii/submissions/1929954746/)
+- **Problem Link**: [https://leetcode.com/problems/the-skyline-problem/](https://leetcode.com/problems/the-skyline-problem/)
 
 ## Solution Code
 
 ```unknown
-class Solution:    def combinationSum3(self, k: int, n: int):        result = []                def backtrack(start, remaining_sum, remaining_k, path):            # If combination is complete            if remaining_k == 0 and remaining_sum == 0:                result.append(path[:])                return                        # Invalid case            if remaining_k == 0 or remaining_sum < 0:                return                        for num in range(start, 10):
+import heapqclass Solution:    def getSkyline(self, buildings):        # Step 1: Create events        events = []        for L, R, H in buildings:            events.append((L, -H, R))  # start event            events.append((R, 0, 0))   # end marker                # Step 2: Sort events        events.sort()                result = []        heap = [(0, float('inf'))]  # (height, end)
 
 ```
 
