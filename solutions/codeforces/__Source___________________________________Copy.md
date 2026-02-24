@@ -7,12 +7,12 @@
 - **Platform**: codeforces
 - **Language**: Unknown
 - **Date**: 2026-02-24
-- **Problem Link**: [https://codeforces.com/contest/158/submission/332251018](https://codeforces.com/contest/158/submission/332251018)
+- **Problem Link**: [https://codeforces.com/contest/118/submission/332400339](https://codeforces.com/contest/118/submission/332400339)
 
 ## Solution Code
 
 ```unknown
-n, k = map(int, input().split())scores = list(map(int, input().split()))kth_score = scores[k-1]count = sum(1 for x in scores if x >= kth_score and x > 0)print(count)
+s = input().lower()vowels = set("aoyeui")result = []for c in s:    if c not in vowels:        result.append(f".{c}")print(''.join(result))
 ```
 
 ---
