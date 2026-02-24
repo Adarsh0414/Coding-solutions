@@ -4,12 +4,13 @@
 - **Platform**: leetcode
 - **Language**: Unknown
 - **Date**: 2026-02-24
-- **Problem Link**: [https://leetcode.com/problems/word-search-ii/submissions/1929764171/](https://leetcode.com/problems/word-search-ii/submissions/1929764171/)
+- **Problem Link**: [https://leetcode.com/problems/shortest-palindrome/submissions/1929924985/](https://leetcode.com/problems/shortest-palindrome/submissions/1929924985/)
 
 ## Solution Code
 
 ```unknown
-            # Explore 4 directions            for dr, dc in [(1,0), (-1,0), (0,1), (0,-1)]:                nr, nc = r + dr, c + dc                if 0 <= nr < rows and 0 <= nc < cols and board[nr][nc] != "#":                    dfs(nr, nc, next_node)                        # Restore cell            board[r][c] = char                # Step 3: Start DFS from each cell        for r in range(rows):            for c in range(cols):                dfs(r, c, root)                return result
+class Solution:    def shortestPalindrome(self, s: str) -> str:        if not s:            return s                rev = s[::-1]        temp = s + "#" + rev                # Build LPS array (KMP preprocessing)        lps = [0] * len(temp)        j = 0                for i in range(1, len(temp)):            while j > 0 and temp[i] != temp[j]:                j = lps[j - 1]
+
 ```
 
 ---
