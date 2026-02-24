@@ -4,7 +4,7 @@
 - **Platform**: leetcode
 - **Language**: Unknown
 - **Date**: 2026-02-24
-- **Problem Link**: [https://leetcode.com/problems/word-search-ii/](https://leetcode.com/problems/word-search-ii/)
+- **Problem Link**: [https://leetcode.com/problems/word-search-ii/submissions/1929764171/](https://leetcode.com/problems/word-search-ii/submissions/1929764171/)
 
 ## Solution Code
 
