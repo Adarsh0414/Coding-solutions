@@ -4,12 +4,12 @@
 - **Platform**: leetcode
 - **Language**: Unknown
 - **Date**: 2026-02-24
-- **Problem Link**: [https://leetcode.com/problems/shortest-palindrome/submissions/1929924985/](https://leetcode.com/problems/shortest-palindrome/submissions/1929924985/)
+- **Problem Link**: [https://leetcode.com/problems/kth-largest-element-in-an-array/](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 
 ## Solution Code
 
 ```unknown
-class Solution:    def shortestPalindrome(self, s: str) -> str:        if not s:            return s                rev = s[::-1]        temp = s + "#" + rev                # Build LPS array (KMP preprocessing)        lps = [0] * len(temp)        j = 0                for i in range(1, len(temp)):            while j > 0 and temp[i] != temp[j]:                j = lps[j - 1]
+                while nums[r] > pivot:                    r -= 1                if l <= r:                    nums[l], nums[r] = nums[r], nums[l]                    l += 1                    r -= 1                        if target <= r:                return quickselect(left, r)            if target >= l:                return quickselect(l, right)                        return nums[target]                return quickselect(0, n - 1)
 
 ```
 
