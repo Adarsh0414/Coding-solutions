@@ -1,0 +1,31 @@
+# 222. Count Complete Tree Nodes
+
+## Solution Details
+- **Platform**: leetcode
+- **Language**: Sort by:
+- **Date**: 2026-02-25
+- **Problem Link**: [https://leetcode.com/problems/count-complete-tree-nodes/description/](https://leetcode.com/problems/count-complete-tree-nodes/description/)
+
+## Solution Code
+
+```text
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    
+    int leftHeight(TreeNode* node) {
+
+```
+
+---
+*Pushed by CodeMerge*
