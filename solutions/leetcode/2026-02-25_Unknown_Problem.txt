@@ -4,12 +4,12 @@
 - **Platform**: leetcode
 - **Language**: Unknown
 - **Date**: 2026-02-25
-- **Problem Link**: [https://leetcode.com/problems/invert-binary-tree/](https://leetcode.com/problems/invert-binary-tree/)
+- **Problem Link**: [https://leetcode.com/problems/basic-calculator-ii/](https://leetcode.com/problems/basic-calculator-ii/)
 
 ## Solution Code
 
 ```text
-                root.left, root.right = root.right, root.left        # Swap left and right                    return None        if not root:    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:class Solution:#         self.right = right        # Recursively invert subtrees        self.invertTree(root.left)        self.invertTree(root.right)#         self.left = left#         self.val = val#     def __init__(self, val=0, left=None, right=None):
+                            if not s[i].isdigit() or i == len(s) - 1:                num = num * 10 + int(s[i])                        # If operator OR last character            if s[i].isdigit():                for i in range(len(s)):                s = s.replace(" ", "")        sign = '+'        stack = []        num = 0    def calculate(self, s: str) -> int:class Solution:
 
 ```
 
